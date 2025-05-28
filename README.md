@@ -11,24 +11,24 @@
 ## Paso 2: Instalar y Configurar MongoDB Compass
 - **Descripción**: Descarga e instala MongoDB Compass y conéctate a MongoDB Atlas.
 - **Capturas de pantalla**:
-  - ![Conexión exitosa en MongoDB Compass](./documentation/captura-paso2.png)
+  - ![Conexión exitosa en MongoDB Compass](./documentation/conexion-mongodb-compas1.png)
+  - ![Conexión exitosa en MongoDB Compass](./documentation/conexion-mongodb-compas2.png)
 
 ## Paso 3: Configurar el Proyecto en VS Code
 - **Descripción**: Crea un nuevo proyecto en VS Code e instala las dependencias necesarias.
 - **Capturas de pantalla**:
-  - ![Estructura del proyecto](./documentation/captura-paso3-1.png)
-  - ![Instalación de dependencias](./documentation/captura-paso3-2.png)
+  - ![Instalación de dependencias](./documentation/instalacion-dependencias.png)
 
 ## Paso 4: Configurar la Conexión a MongoDB
 - **Descripción**: Crea el archivo `.env` y el archivo `database.js` para configurar la conexión a MongoDB.
 - **Capturas de pantalla**:
-  - ![Archivo .env](./documentation/captura-paso4-1.png)
-  - ![Archivo database.js](./documentation/captura-paso4-2.png)
+  - ![Archivo .env](./documentation/env.png)
+  - ![Archivo database.js](./documentation/database-js.png)
 
 ## Paso 5: Definir el Modelo de Tarea
 - **Descripción**: Crea el archivo `task.model.js` para definir el modelo de tarea.
 - **Capturas de pantalla**:
-  - ![Archivo task.model.js](./documentation/captura-paso5.png)
+  - ![Archivo task.model.js](./documentation/taskmodel-js.png)
 
 ## Paso 6: Inicializar el Repositorio en GitHub
 - **Descripción**: Crea un nuevo repositorio en GitHub y configura Git en tu proyecto.
@@ -39,11 +39,11 @@
                     git remote add origin URL_DEL_REPOSITORIO#cambiar esto con lo del repo
                     git push -u origin main
 - **Capturas de pantalla**:
-  - ![Creación del repositorio en GitHub](./documentation/captura-paso6-1.png)
-  - ![Actualizar repositorio en GitHub](./documentation/captura-paso6-2.png)
+  - ![Creación del repositorio en GitHub](./documentation/creacion-repositorio.png)
+  - ![Actualizar repositorio en GitHub](./documentation/git-actualizar.png)
 
 ## Paso 7: Probar la Conexión y el Modelo
 - **Descripción**: Crea un archivo `test.js` y ejecútalo para probar la conexión y el modelo.
 - **Capturas de pantalla**:
-  - ![Resultado en Terminal](./documentation/captura-paso7-1.png)
-  - ![Tarea en MongoDB Compass](./documentation/captura-paso7-2.png)
+  - ![Resultado en Terminal](./documentation/test-1.png)
+  - ![Tarea en MongoDB Compass](./documentation/reflejo-test-mongo.png)
