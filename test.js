@@ -4,8 +4,8 @@ const Task = require('./backend/models/task.model');
 const run = async () => {
   await connectDB(); // Esperar a que la conexión se establezca
   const nuevaTarea = new Task({
-    title: 'Mi primera tarea',
-    description: 'Descripción de prueba',
+    title: 'Nueva Tarea',
+    description: 'Descripción de la nueva tarea',
   });
 
   await nuevaTarea.save(); // Esperar a que se guarde la tarea

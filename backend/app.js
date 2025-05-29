@@ -1,7 +1,12 @@
+require('dotenv').config({ path: '../.env' });
+
 const express = require('express');
 const app = express();
 const tasksRouter = require('./routes/tasks.routes');
 const connectDB = require('./database');
+
+// Imprimir la URI para verificar
+console.log('MongoDB URI:', process.env.MONGODB_URI);
 
 connectDB();
 
