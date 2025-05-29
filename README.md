@@ -55,3 +55,19 @@
   - ![Archivo tasks.routes.js](./documentation/tasks-routes-js.png)
   - ![Archivo app.js](./documentation/app-js.png)
   - ![Prueba con Postman](./documentation/postman-get-tareas.png)
+
+## Paso 9: Implementar el Endpoint POST `/tareas`
+
+- **Descripción**: Implementa el endpoint POST `/tareas` para crear nuevas tareas en la base de datos.
+- **Controlador**: Se actualizó el archivo `tasks.controller.js` para incluir la función `createTask`, que valida los datos de entrada y guarda una nueva tarea en la base de datos.
+  - **Capturas de pantalla**:
+    - ![Controlador de Tareas Actualizado](./documentation/tasks-controller-update.png)
+- **Rutas**: Se modificó el archivo `tasks.routes.js` para incluir el nuevo endpoint POST `/tareas`.
+  - **Capturas de pantalla**:
+    - ![Rutas Actualizadas](./documentation/tasks-routes-update.png)
+- **Middleware**: Se aseguró que `app.js` tenga el middleware `express.json()` para parsear el cuerpo de las solicitudes.
+  - **Capturas de pantalla**:
+    - ![Middleware JSON en app.js](./documentation/app-json-middleware.png)
+- **Pruebas con Postman**: Se realizó una solicitud POST a `http://localhost:3000/api/tareas` para verificar que el endpoint funciona correctamente.
+  - **Capturas de pantalla**:
+    - ![Prueba con Postman](./documentation/postman-post-tareas.png)
