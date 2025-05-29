@@ -47,3 +47,11 @@
 - **Capturas de pantalla**:
   - ![Resultado en Terminal](./documentation/test-1.png)
   - ![Tarea en MongoDB Compass](./documentation/reflejo-test-mongo.png)
+
+## Paso 8: Implementar el Endpoint GET `/tareas`
+- **Descripción**: Implementa el endpoint para obtener todas las tareas de la base de datos.
+- **Capturas de pantalla**:
+  - ![Archivo tasks.controller.js](./documentation/tasks-controller-js.png)
+  - ![Archivo tasks.routes.js](./documentation/tasks-routes-js.png)
+  - ![Archivo app.js](./documentation/app-js.png)
+  - ![Prueba con Postman](./documentation/postman-get-tareas.png)
