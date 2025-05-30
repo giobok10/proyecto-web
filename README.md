@@ -100,3 +100,16 @@
 - **Pruebas con Postman**: Se realizó una solicitud DELETE a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
   - **Capturas de pantalla**:
     - ![Prueba con Postman para DELETE](./documentation/postman-delete-tareas.png)
+
+## Paso 12: Implementar el Endpoint GET `/tareas/:id`
+
+- **Descripción**: Implementa el endpoint GET `/tareas/:id` para obtener detalles específicos de una tarea existente en la base de datos.
+- **Controlador**: Se actualizó el archivo `tasks.controller.js` para incluir la función `getTaskById`, que busca una tarea por su ID y devuelve sus detalles.
+  - **Capturas de pantalla**:
+    - ![Controlador de Tareas Actualizado con GET por ID](./documentation/tasks-controller-getById-update.png)
+- **Rutas**: Se modificó el archivo `tasks.routes.js` para incluir el nuevo endpoint GET `/tareas/:id`.
+  - **Capturas de pantalla**:
+    - ![Rutas Actualizadas con GET por ID](./documentation/tasks-routes-getById-update.png)
+- **Pruebas con Postman**: Se realizó una solicitud GET a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
+  - **Capturas de pantalla**:
+    - ![Prueba con Postman para GET por ID](./documentation/postman-getById-tareas.png)
