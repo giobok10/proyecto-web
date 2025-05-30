@@ -71,3 +71,19 @@
 - **Pruebas con Postman**: Se realizó una solicitud POST a `http://localhost:3000/api/tareas` para verificar que el endpoint funciona correctamente.
   - **Capturas de pantalla**:
     - ![Prueba con Postman](./documentation/postman-post-tareas.png)
+
+## Paso 10: Implementar el Endpoint PUT `/tareas/:id`
+
+- **Descripción**: Implementa el endpoint PUT `/tareas/:id` para actualizar tareas existentes en la base de datos.
+- **Controlador**: Se actualizó el archivo `tasks.controller.js` para incluir la función `updateTask`, que busca una tarea por su ID, actualiza los campos proporcionados y guarda los cambios en la base de datos.
+  - **Capturas de pantalla**:
+    - ![Controlador de Tareas Actualizado con PUT](./documentation/tasks-controller-put-update.png)
+- **Rutas**: Se modificó el archivo `tasks.routes.js` para incluir el nuevo endpoint PUT `/tareas/:id`.
+  - **Capturas de pantalla**:
+    - ![Rutas Actualizadas con PUT](./documentation/tasks-routes-put-update.png)
+- **Middleware**: Se ejecuto `app.js` para que se ejecutara el servidor.
+  - **Capturas de pantalla**:
+    - ![Servidor de app.js](./documentation/app-ejecucion-servidor.png)
+- **Pruebas con Postman**: Se realizó una solicitud PUT a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
+  - **Capturas de pantalla**:
+    - ![Prueba con Postman para PUT](./documentation/postman-put-tareas.png)
