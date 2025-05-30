@@ -87,3 +87,16 @@
 - **Pruebas con Postman**: Se realizó una solicitud PUT a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
   - **Capturas de pantalla**:
     - ![Prueba con Postman para PUT](./documentation/postman-put-tareas.png)
+
+## Paso 11: Implementar el Endpoint DELETE `/tareas/:id`
+
+- **Descripción**: Implementa el endpoint DELETE `/tareas/:id` para eliminar tareas existentes de la base de datos.
+- **Controlador**: Se actualizó el archivo `tasks.controller.js` para incluir la función `deleteTask`, que busca y elimina una tarea por su ID.
+  - **Capturas de pantalla**:
+    - ![Controlador de Tareas Actualizado con DELETE](./documentation/tasks-controller-delete-update.png)
+- **Rutas**: Se modificó el archivo `tasks.routes.js` para incluir el nuevo endpoint DELETE `/tareas/:id`.
+  - **Capturas de pantalla**:
+    - ![Rutas Actualizadas con DELETE](./documentation/tasks-routes-delete-update.png)
+- **Pruebas con Postman**: Se realizó una solicitud DELETE a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
+  - **Capturas de pantalla**:
+    - ![Prueba con Postman para DELETE](./documentation/postman-delete-tareas.png)
