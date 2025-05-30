@@ -81,7 +81,7 @@
 - **Rutas**: Se modificó el archivo `tasks.routes.js` para incluir el nuevo endpoint PUT `/tareas/:id`.
   - **Capturas de pantalla**:
     - ![Rutas Actualizadas con PUT](./documentation/tasks-routes-put-update.png)
-- **Middleware**: Se ejecuto `app.js` para que se ejecutara el servidor.
+- **Ejecutar servidor**: Se ejecuto `app.js` para que se ejecutara el servidor.
   - **Capturas de pantalla**:
     - ![Servidor de app.js](./documentation/app-ejecucion-servidor.png)
 - **Pruebas con Postman**: Se realizó una solicitud PUT a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
