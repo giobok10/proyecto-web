@@ -122,7 +122,7 @@
   ```bash
   npm install socket.io
 
-## Paso 16: Despliegue en Render
+## Paso 14: Despliegue en Render
 
 - **Descripción**: Despliegue del backend en Render, configuración de variables de entorno y conexión a la base de datos remota.
 - **Actualizar `package.json`**:
@@ -148,6 +148,3 @@
   - **Capturas de pantalla**:
     - ![Logs de Despliegue en Render](./documentation/render-deploy-logs.png)
 - **Pruebas Finales**:
-  - Se probaron los endpoints del backend desplegado usando Postman.
-  - **Capturas de pantalla**:
-    - ![Prueba de Endpoints con Postman](./documentation/postman-test-render.png)
