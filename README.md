@@ -147,4 +147,3 @@
   - Render inició el despliegue automáticamente y se verificó la ausencia de errores en los logs.
   - **Capturas de pantalla**:
     - ![Logs de Despliegue en Render](./documentation/render-deploy-logs.png)
-- **Pruebas Finales**:
