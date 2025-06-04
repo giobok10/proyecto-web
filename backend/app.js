@@ -1,23 +1,33 @@
 require('dotenv').config({ path: '../.env' });
 
 const express = require('express');
+const http = require('http');
 const app = express();
-const tasksRouter = require('./routes/tasks.routes');
-const connectDB = require('./database');
+const server = http.createServer(app);
+const io = require('socket.io')(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+  }
+});
 
-// Imprimir la URI para verificar
-console.log('MongoDB URI:', process.env.MONGODB_URI);
+const connectDB = require('./database');
+const tasksRouter = require('./routes/tasks.routes');
 
 connectDB();
 
-// Middleware para parsear JSON
 app.use(express.json());
+
+// Middleware para exponer io a los controladores
+app.use((req, res, next) => {
+  req.io = io;
+  next();
+});
 
 // Rutas
 app.use('/api/tareas', tasksRouter);
 
-// Iniciar servidor
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

@@ -113,3 +113,11 @@
 - **Pruebas con Postman**: Se realizó una solicitud GET a `http://localhost:3000/api/tareas/ID_DE_LA_TAREA` para verificar que el endpoint funciona correctamente.
   - **Capturas de pantalla**:
     - ![Prueba con Postman para GET por ID](./documentation/postman-getById-tareas.png)
+
+## Paso 13: Implementar Emisión de Eventos WebSocket
+
+- **Descripción**: Implementa la emisión de eventos WebSocket tras operaciones CRUD para notificar cambios en tiempo real y se modificaron `app.js` & `task.controller.js`.
+- **Instalar Socket.IO**:
+  - Se instaló Socket.IO para manejar la comunicación en tiempo real.
+  ```bash
+  npm install socket.io
