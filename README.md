@@ -121,3 +121,33 @@
   - Se instaló Socket.IO para manejar la comunicación en tiempo real.
   ```bash
   npm install socket.io
+
+## Paso 16: Despliegue en Render
+
+- **Descripción**: Despliegue del backend en Render, configuración de variables de entorno y conexión a la base de datos remota.
+- **Actualizar `package.json`**:
+  - Se añadió el script `start` al archivo `package.json`.
+  - **Capturas de pantalla**:
+    - ![Script de Inicio en package.json](./documentation/package-json-start.png)
+- **Crear Cuenta en Render**:
+  - Se creó una cuenta en Render y se configuró un nuevo servicio web.
+  - **Capturas de pantalla**:
+    - ![Creación de Servicio Web en Render](./documentation/render-new-service.png)
+- **Configurar Variables de Entorno**:
+  - Se configuraron las variables de entorno en Render para la conexión a MongoDB Atlas.
+  - **Capturas de pantalla**:
+    - ![Configuración de Variables de Entorno en Render](./documentation/render-env-vars.png)
+- **Conectar con GitHub**:
+  - Se vinculó el repositorio de GitHub con Render para el despliegue continuo.
+  - **Capturas de pantalla**:
+    - ![Conexión con GitHub en Render](./documentation/render-github-integration.png)
+- **Revisar `package.json`**:
+  - Se aseguró que `package.json` tenga el script `start` para iniciar la aplicación.
+- **Desplegar y Verificar**:
+  - Render inició el despliegue automáticamente y se verificó la ausencia de errores en los logs.
+  - **Capturas de pantalla**:
+    - ![Logs de Despliegue en Render](./documentation/render-deploy-logs.png)
+- **Pruebas Finales**:
+  - Se probaron los endpoints del backend desplegado usando Postman.
+  - **Capturas de pantalla**:
+    - ![Prueba de Endpoints con Postman](./documentation/postman-test-render.png)
